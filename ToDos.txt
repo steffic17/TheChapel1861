@@ -15,6 +15,7 @@ Add parallax to the jumbatron pictures
 
 Functional
 -----------
+Fix email/twitter icons in footer
 Make start days buttons to book/enquire
 Better gallery format
  - loop the slides
