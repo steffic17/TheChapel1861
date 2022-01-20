@@ -2,6 +2,8 @@
 #898488  - light grey
 #3b4551  - dark grey
 #878d95  - mid-grey
+#4b4b4b  - navbar/footer dark grey
+#f2f2f2  -  light text grey
 */
 
 body {
@@ -55,6 +57,20 @@ header nav {
   justify-content: flex-end;
 }
 
+/* Navbar container */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #4b4b4b;
+}
+/* Text inside the navbar */
+.navbar h2 {
+  color: #f2f2f2;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+
 div > h1 {
   font-size: 1.8rem;
 }
@@ -73,7 +89,10 @@ nav > p {
   color: #3b4551;
 }
 
+/* Add a gray background color and some padding to the footer */
 footer {
+  background-color: #4b4b4b;
+  padding: 25px;
   margin-top: 30px;
 }
 
@@ -112,11 +131,19 @@ row {
   font-size: 2rem;
 }
 
+.row h3 {
+  margin: 10px 10px 15px;
+  min-width: 60px;
+  padding: 1px;
+  color: #3b4551;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
 .row p {
   margin: 10px 10px 15px;
   min-width: 60px;
   padding: 1px;
-  /*color: #3b4551;*/
 }
 
 .row a {
@@ -195,7 +222,7 @@ body {font-family: Verdana, sans-serif;}
 .month {
   padding: 70px 25px;
   width: 100%;
-  background: #3b4551;
+  background: #4b4b4b;
   text-align: center;
 }
 
@@ -212,16 +239,13 @@ body {font-family: Verdana, sans-serif;}
   letter-spacing: 3px;
 }
 
-/* Previous button inside month header */
-.month .prev {
-  float: left;
-  padding-top: 10px;
-}
 
-/* Next button */
-.month .next {
-  float: right;
-  padding-top: 10px;
+
+/* Availability header*/
+.month li {
+  display: inline-block;
+  color: #666;
+  text-align: center;
 }
 
 /* Weekdays (Mon-Sun) */
@@ -257,27 +281,46 @@ body {font-family: Verdana, sans-serif;}
 
 /* Highlight the "booked" days */
 .days li .active {
-  padding: 5px;
-  background: #3b4551;
-  color: white !important;
+  padding: 2px 30px;
+  margin: 5px;
+  background-color: #3b4551;
+  color: white;
+  font-weight: 500;
+  align-items: left;
+  /* box-sizing: border-box; */
+  width:300px;
+  border-radius: 10%;
 }
 
 /* Border around the "start" days */
 .days li .start {
-  padding: 5px;
-  border: 2px solid #3b4551;
+  padding: 2px 20px;
+  margin: 5px;
+  border: solid #3b4551;
+  font-weight: 600;
+  border-radius: 10%;
+  /*outline-style: solid #3b4551;*/
 }
 
 
 /*Footer styling*/
-.footer h3 {
+.footer h2 {
   margin: 0px 30px 0px;
   min-width: 60px;
   /* max-width: 300px; */
   padding: 1px;
   font-weight: 700;
-  color: #3b4551;
-  font-size: 1rem;
+  color: #f2f2f2;
+  font-size: 1.7rem;
+}
+.footer h3 {
+  margin: 0px 30px 0px;
+  min-width: 60px;
+  /* max-width: 300px; */
+  padding: 1px;
+  font-weight: 600;
+  color: #f2f2f2;
+  font-size: 1.25rem;
 }
 
 .footer p {
@@ -286,7 +329,7 @@ body {font-family: Verdana, sans-serif;}
   /* max-width: 300px; */
   padding: 1px;
   font-weight: 500;
-  color: #3b4551;
+  color: #f2f2f2;
   font-size: 1rem;
 }
 
@@ -360,9 +403,6 @@ body {font-family: Verdana, sans-serif;}
   margin: 40px 10px 15px;
   min-width: 60px;
   padding: 1px;
-  color: #3b4551;
-  font-weight: 700;
-  font-size: 1.7rem;
 }
 
 
@@ -370,6 +410,16 @@ body {font-family: Verdana, sans-serif;}
   margin: 10px 10px 15px;
   min-width: 60px;
   /* max-width: 300px; */
+  padding: 1px;
+  font-weight: 500;
+  color: #3b4551;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-sm-8 img {
+  margin: 10px 10px 15px;
+  width: 100px;
   padding: 1px;
   font-weight: 500;
   color: #3b4551;
@@ -395,17 +445,17 @@ section.container .row {
   justify-content: center;
 }
 
-.jumbotron {
+.jumbotron1 {
   display: flex;
   align-items: flex-end;
   height: 100vh;
-  background-image: url('Images/Front.jpg');
+  background-image: url('Images/For Listing/002 Chapel Outside - Front Door - 2.jpg');
   background-size: cover;
   background-position: center;
 }
 
-.jumbotron h2 {
-  background-color: #898488;
+.jumbotron1 h2 {
+  background-color: #f2f2f2;
   display: inline-block;
   color: #3b4551;
   font-weight: 700;
@@ -413,15 +463,43 @@ section.container .row {
   border-radius: 5px;
 }
 
-.jumbotron h3 {
+.jumbotron1 h3 {
   color: #898488;
   font-weight: bold;
 }
 
-.btn-primary {
-  color: #898488;
-  background-color: #3b4551;
+
+.jumbotron2 {
+  display: flex;
+  align-items: flex-end;
+  height: 100vh;
+  background-image: url('Images/Locality/Coast - Beach - Brancaster.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.jumbotron2 h2 {
+  background-color: #f2f2f2;
+  display: inline-block;
+  color: #3b4551;
+  font-weight: 700;
+  padding: 10px 35px;
+  border-radius: 5px;
+}
+
+.jumbotron2 h3 {
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+.btn {
+  color: #f2f2f2;
+  background-color: #4b4b4b;
   padding: 50px;
+}
+
+.btn a {
+  color: #f2f2f2;
 }
 
 /* Image formatting */
@@ -471,8 +549,8 @@ section.container .row {
 }
 
 .pill-grey, .dropbtn {
-  background-color: #3b4551;
-  color: #3b4551;
+  background-color: #4b4b4b;
+  color: #4b4b4b;
   position: relative;
   display: inline-block;
 }
@@ -483,6 +561,7 @@ section.container .row {
 }
 
 .dropdown-content{
+  right:0;
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -520,12 +599,13 @@ section.container .row {
 
 /* Hide the images by default */
 .mySlides {
-  display: hide;
+/*  display: hide;*/
   text-align:center;
+  max-height:700px;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev, .next, .prev-month, .next-month {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -538,11 +618,10 @@ section.container .row {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-/*  left: 0;*/
 }
 
 /* Position the "next button" to the right */
-.next {
+.next, .next-month {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
@@ -552,6 +631,11 @@ section.container .row {
   background-color: rgba(0,0,0,0.8);
 }
 
+.prev-month, .next-month {
+  color: white;
+  position: relative;
+}
+	
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -585,7 +669,10 @@ section.container .row {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active {
+  background-color: #3b4551;
+}
+.dot:hover {
   background-color: #3b4551;
 }
 
@@ -617,3 +704,9 @@ section.container .row {
 
 /* Change the background color of the dropdown & contact button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #878d95;}
+
+/* Start day dropdowns */
+.start-content a:hover {background-color: #ddd;}
+.start-content select:hover {background-color: #ddd;}
+/* Show the dropdown menu on hover */
+.start:hover .start-content {display: block;}

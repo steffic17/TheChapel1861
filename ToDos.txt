@@ -1,0 +1,22 @@
+ToDos  -  Stef Church  -  January 2022
+----------------------------------------
+
+Cosmetic
+---------
+Improve blurb about Fakenham
+Improve blurb about North Norfolk
+Update markting pictures
+Improve sizing of marketing pictures to fit the gallery better
+Include a gallery of local pictures
+Add parallax to the jumbatron pictures
+
+
+
+
+Functional
+-----------
+Make start days buttons to book/enquire
+Better gallery format
+ - loop the slides
+ - previous and next slides also visible
+ - continuous loop pictures
