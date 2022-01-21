@@ -292,6 +292,19 @@ body {font-family: Verdana, sans-serif;}
   border-radius: 10%;
 }
 
+/* Highlight the "tentative" days */
+.days li .tentative {
+  padding: 2px 30px;
+  margin: 5px;
+  background-color: #fbc351;
+//  color: white;
+  font-weight: 500;
+  align-items: left;
+  /* box-sizing: border-box; */
+  width:300px;
+  border-radius: 10%;
+}
+
 /* Border around the "start" days */
 .days li .start {
   padding: 2px 20px;

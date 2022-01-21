@@ -171,21 +171,21 @@ const createSingleMonthHTML = (currentMonth) => {
   
   for (let n = 0;n < currentMonth.length; n++){
 	if(currentMonth[n].fullDate>dateToday){
-		if (currentMonth[n].availability){
+//		console.log(currentMonth[n]);
+		if (currentMonth[n].availability == "AVAILABLE"){
 			if (currentMonth[n].dayOfWeek == "Friday"){
 				htmlString += `<li><span class="start">
 				  <a href="mailto: thechapel1861@outlook.com?subject=Chapel 1861 Enquiry:  Availability ${currentMonth[n].dayOfMonth} ${currentMonth[n].month} ${currentMonth[n].year}"> ${currentMonth[n].dayOfMonth}
 				  <span style="font-size:0.7rem">£${currentMonth[n].night_price}</span></a></span></li>`;
-			}
-			else{
+			} else {
 				htmlString += `<li>${currentMonth[n].dayOfMonth}  <span style="font-size:0.7rem">£${currentMonth[n].night_price}</span></li>`;
 			}
-  		}
-		else{
+  		} else if(currentMonth[n].availability == "TENTATIVE"){
+			htmlString += `<li><span class="tentative"> ${currentMonth[n].dayOfMonth}</span></li>`;
+		} else{
 			htmlString += `<li><span class="active"> ${currentMonth[n].dayOfMonth}</span></li>`;
 		}
-	}
-	else{
+	} else {
 			htmlString += `<li><span class="active"> ${currentMonth[n].dayOfMonth}</span></li>`;
 	}
   }
