@@ -15,9 +15,16 @@ Add parallax to the jumbatron pictures
 
 Functional
 -----------
-Fix email/twitter icons in footer
 Make start days buttons to book/enquire
 Better gallery format
  - loop the slides
  - previous and next slides also visible
  - continuous loop pictures
+
+
+
+
+Done
+------
+26/01/22	Fix email/twitter icons in footer
+26/01/22	Email links fixed/better

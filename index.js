@@ -175,10 +175,10 @@ const createSingleMonthHTML = (currentMonth) => {
 		if (currentMonth[n].availability == "AVAILABLE"){
 			if (currentMonth[n].dayOfWeek == "Friday"){
 				htmlString += `<li><span class="start">
-				  <a href="mailto: thechapel1861@outlook.com?subject=Chapel 1861 Enquiry:  Availability ${currentMonth[n].dayOfMonth} ${currentMonth[n].month} ${currentMonth[n].year}"> ${currentMonth[n].dayOfMonth}
-				  <span style="font-size:0.7rem">£${currentMonth[n].night_price}</span></a></span></li>`;
+				  <a href="mailto: thechapel1861@outlook.com?subject=The Chapel 1861 Enquiry:  Availability ${currentMonth[n].dayOfMonth} ${currentMonth[n].month} ${currentMonth[n].year}"> ${currentMonth[n].dayOfMonth}
+				  <span style="font-size:0.85rem">£${currentMonth[n].night_price}</span></a></span></li>`;
 			} else {
-				htmlString += `<li>${currentMonth[n].dayOfMonth}  <span style="font-size:0.7rem">£${currentMonth[n].night_price}</span></li>`;
+				htmlString += `<li>${currentMonth[n].dayOfMonth}  <span style="font-size:0.85rem">£${currentMonth[n].night_price}</span></li>`;
 			}
   		} else if(currentMonth[n].availability == "TENTATIVE"){
 			htmlString += `<li><span class="tentative"> ${currentMonth[n].dayOfMonth}</span></li>`;
