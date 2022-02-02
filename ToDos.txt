@@ -9,6 +9,7 @@ Update markting pictures
 Improve sizing of marketing pictures to fit the gallery better
 Include a gallery of local pictures
 Add parallax to the jumbatron pictures
+Icons saying facilities available, e.g. charging/hairdryer/WiFi etc
 
 
 
