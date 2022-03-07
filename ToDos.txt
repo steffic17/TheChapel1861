@@ -21,6 +21,7 @@ Better gallery format
  - loop the slides
  - previous and next slides also visible
  - continuous loop pictures
+ - Swipe through pictures? Any OnClick function? (better for mobile/tablet browsing)
 
 
 

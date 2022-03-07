@@ -6,12 +6,7 @@ const getDate = () => {
 const getDiaryData = () => {
 	
     var diaryWeekDate = [
-		"03 Dec 2021",
-"10 Dec 2021",
-"17 Dec 2021",
-"24 Dec 2021",
-"31 Dec 2021",
-"07 Jan 2022",
+		"07 Jan 2022",
 "14 Jan 2022",
 "21 Jan 2022",
 "28 Jan 2022",
@@ -76,16 +71,11 @@ const getDiaryData = () => {
 "NOT AVAILABLE",
 "NOT AVAILABLE",
 "NOT AVAILABLE",
+"TENTATIVE",
 "NOT AVAILABLE",
 "NOT AVAILABLE",
 "NOT AVAILABLE",
-"NOT AVAILABLE",
-"AVAILABLE",
-"AVAILABLE",
-"NOT AVAILABLE",
-"NOT AVAILABLE",
-"NOT AVAILABLE",
-"AVAILABLE",
+"TENTATIVE",
 "AVAILABLE",
 "AVAILABLE",
 "AVAILABLE",
@@ -126,12 +116,7 @@ const getDiaryData = () => {
 
 
 	var diaryNightPrice = [
-		150,
-223,
-304,
-304,
-304,
-192,
+		192,
 150,
 150,
 150,
