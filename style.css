@@ -604,8 +604,8 @@ section.container .row {
 
 /* Slideshow container */
 .slideshow-container {
-  width: 90vw;
-  height: 100vh;
+  max-width: 90vw;
+  max-height: 100vh;
   position: relative;
   margin: auto;
 }
