@@ -181,7 +181,7 @@ const createSingleMonthHTML = (currentMonth) => {
 				htmlString += `<li>${currentMonth[n].dayOfMonth}  <span style="font-size:0.85rem">£${currentMonth[n].night_price}</span></li>`;
 			}
   		} else if(currentMonth[n].availability == "TENTATIVE"){
-			htmlString += `<li><span class="tentative"> ${currentMonth[n].dayOfMonth}</span></li>`;
+			htmlString += `<li><span class="tentative"> ${currentMonth[n].dayOfMonth}  <span style="font-size:0.85rem">£${currentMonth[n].night_price}</span></li>`;
 		} else{
 			htmlString += `<li><span class="active"> ${currentMonth[n].dayOfMonth}</span></li>`;
 		}
