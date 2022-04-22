@@ -614,7 +614,7 @@ section.container .row {
 .mySlides {
 /*  display: hide;*/
   text-align:center;
-  max-height:700px;
+  max-height:100vh;
 }
 
 /* Next & previous buttons */
