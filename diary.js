@@ -269,13 +269,13 @@ const getDiaryData = () => {
 				night_price: diaryNightPrice[i]
 			}
 			
-			console.log(singleDiaryEntry);
+//			console.log(singleDiaryEntry);
 			if (diaryNightsAvailable[i] > j) {
 				singleDiaryEntry.availability = diaryWeekAvailability[i]
 			} else {
 				singleDiaryEntry.availability = "NOT AVAILABLE"
 			}
-			console.log(singleDiaryEntry);
+//			console.log(singleDiaryEntry);
 		allDiary.push(singleDiaryEntry);
 		}
 	}
