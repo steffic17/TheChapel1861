@@ -79,10 +79,10 @@ const getDiaryData = () => {
 "NOT AVAILABLE",
 "NOT AVAILABLE",
 "TENTATIVE",
+"TENTATIVE",
 "NOT AVAILABLE",
 "NOT AVAILABLE",
-"NOT AVAILABLE",
-"AVAILABLE",
+"TENTATIVE",
 "NOT AVAILABLE",
 "NOT AVAILABLE",
 "NOT AVAILABLE",
@@ -135,7 +135,7 @@ const getDiaryData = () => {
 254,
 192,
 120,
-192,
+135,
 304,
 223,
 223,
@@ -168,6 +168,60 @@ const getDiaryData = () => {
 254,
 304,
 304
+	];
+
+	var diaryNightsAvailable = [0,
+0,
+0,
+0,
+0,
+7,
+0,
+0,
+0,
+0,
+3,
+0,
+7,
+7,
+4,
+0,
+3,
+0,
+7,
+3,
+7,
+2,
+7,
+3,
+7,
+3,
+3,
+7,
+7,
+7,
+7,
+7,
+7,
+7,
+3,
+7,
+7,
+3,
+7,
+7,
+7,
+7,
+7,
+3,
+0,
+0,
+0,
+0,
+0,
+0,
+7,
+7
 	];
 
 	const weekday = new Array(14);
@@ -212,9 +266,16 @@ const getDiaryData = () => {
 				date: newDate,
 				day_num: d.getDay()+j,
 				day: weekday[d.getDay()+j],
-				availability: diaryWeekAvailability[i],
 				night_price: diaryNightPrice[i]
 			}
+			
+			console.log(singleDiaryEntry);
+			if (diaryNightsAvailable[i] > j) {
+				singleDiaryEntry.availability = diaryWeekAvailability[i]
+			} else {
+				singleDiaryEntry.availability = "NOT AVAILABLE"
+			}
+			console.log(singleDiaryEntry);
 		allDiary.push(singleDiaryEntry);
 		}
 	}
