@@ -76,6 +76,28 @@ function selectAnySlide(n) {
 }
 
 
+
+
+// Build slide dots HTML controls
+function buildSlideDotHTML() {
+  getSlides().then(slides => slides);
+  
+  htmlDotString = createSlideDotHTML(slides.length);
+  document.getElementById("slide-dots").innerHTML = htmlDotString;
+  return false;
+}
+
+
+//Slide dots viewing HTML helper
+const createSlideDotHTML = (numSlides) => {
+	let htmlString = "";
+	for (i=0;i<=numSlides-1;i++){
+		htmlString += `<span class="dot" onclick="selectAnySlide(${i})"></span>`;
+	}
+  return htmlString;
+}
+
+
 //Show slides with dot function
 function showSlides(n) {
   var i;
@@ -86,8 +108,6 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-
-
   dots[slideIndex].className += " active";
   executeSlideView(slideIndex);
 }
