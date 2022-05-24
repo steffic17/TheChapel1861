@@ -76,6 +76,13 @@ function selectAnySlide(n) {
 }
 
 
+// Preload slides for better UX
+function preloadSlides() {
+  for (i=0;i<slides.length;i++) {
+	selectAnySlide(i);
+  }
+}
+
 
 
 // Build slide dots HTML controls
